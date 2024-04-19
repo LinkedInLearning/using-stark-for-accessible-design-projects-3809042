@@ -68,7 +68,7 @@ jobs:
             #
             #          http://localhost:3000/help
             #          '
-            urls: 'http://localhost:3000/html'
+            urls: 'http://localhost:3000/html/'
 
             # [Optional] Navigation timeout for puppeteer in ms. How long should puppeteer wait till it checks page load (wait until event) is complete.
             # Note: This timeout applies to all pages in your url list individually
