@@ -42,7 +42,7 @@ jobs:
 
             # [Optional] Shell commands for building your app.
             # Example: 'npm run build'
-            build: 'npm install && npm run build'
+            build: ''
 
             # [Optional] Shell commands for serving your app.
             # This command is slightly different from the others: it runs in a long-lived,
