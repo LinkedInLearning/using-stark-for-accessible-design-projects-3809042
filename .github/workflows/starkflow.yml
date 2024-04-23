@@ -34,21 +34,21 @@ jobs:
             # [Optional] Shell commands for setting up the container.
             # You can use this to install tools, export variables, etc.
             # Example: 'nvm install 16 && nvm use 16'
-            setup: ''
+            setup: 'npm install -g nvm'
             
             # [Optional] Shell comamnds to run before the app is built.
             # Run any prebuild steps, cd into subdirectories, etc.
-            prebuild: ''
+            prebuild: 'nvm install 14 && nvm use 14'
 
             # [Optional] Shell commands for building your app.
             # Example: 'npm run build'
-            build: ''
+            build: 'npm install && npm run build'
 
             # [Optional] Shell commands for serving your app.
             # This command is slightly different from the others: it runs in a long-lived,
             # detached process that is only terminated when the scan finishes and our action stops.
             # Example: 'SERVER_PORT=3000 && npm run serve'
-            serve: ''
+            serve: 'SERVER_PORT=3000 && npm start'
 
             # [Optional] The number of milliseconds to wait before your app is ready.
             # Defaults to 5000 milliseconds.
@@ -68,7 +68,7 @@ jobs:
             #
             #          http://localhost:3000/help
             #          '
-            urls: 'https://github.com/LinkedInLearning/using-stark-for-accessible-design-projects-3809042/tree/f0f96a493188317ca32d462c9807153142c63e06/html'
+            urls: 'http://localhost:3000/html'
 
             # [Optional] Navigation timeout for puppeteer in ms. How long should puppeteer wait till it checks page load (wait until event) is complete.
             # Note: This timeout applies to all pages in your url list individually
@@ -100,4 +100,4 @@ jobs:
 
             # [Optional] Shell commands to run after the action finishes a scan.
             # Use this to run any cleanup commands.
-            cleanup: ''
+            cleanup: 'echo "Cleaning up....."'
