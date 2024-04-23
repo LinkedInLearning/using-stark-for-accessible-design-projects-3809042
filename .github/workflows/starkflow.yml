@@ -48,7 +48,7 @@ jobs:
             # This command is slightly different from the others: it runs in a long-lived,
             # detached process that is only terminated when the scan finishes and our action stops.
             # Example: 'SERVER_PORT=3000 && npm run serve'
-            serve: 'npm run serve'
+            serve: ''
 
             # [Optional] The number of milliseconds to wait before your app is ready.
             # Defaults to 5000 milliseconds.
@@ -68,7 +68,7 @@ jobs:
             #
             #          http://localhost:3000/help
             #          '
-            urls: 'http://localhost:3000/html'
+            urls: 'https://explorecalifornia.org'
 
             # [Optional] Navigation timeout for puppeteer in ms. How long should puppeteer wait till it checks page load (wait until event) is complete.
             # Note: This timeout applies to all pages in your url list individually
