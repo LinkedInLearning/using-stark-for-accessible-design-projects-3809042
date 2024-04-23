@@ -48,7 +48,7 @@ jobs:
             # This command is slightly different from the others: it runs in a long-lived,
             # detached process that is only terminated when the scan finishes and our action stops.
             # Example: 'SERVER_PORT=3000 && npm run serve'
-            serve: 'SERVER_PORT=3000 && npm run serve'
+            serve: 'npm run serve'
 
             # [Optional] The number of milliseconds to wait before your app is ready.
             # Defaults to 5000 milliseconds.
